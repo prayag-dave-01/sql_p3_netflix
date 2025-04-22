@@ -202,7 +202,7 @@ FROM (
 WHERE director_name = 'Rajiv Chilaka';
 ```
 
-**Objective:** List all content directed by 'Rajiv Chilaka'.
+**Objective:** List all content directed by 'Rajiv Chilaka'. UNNEST can be used since few movies/TV shows have multiple directors.
 
 ### 8. List all TV shows with more than 5 seasons
 
@@ -228,7 +228,7 @@ FROM netflix
 GROUP BY 1;
 ```
 
-**Objective:** Count the number of content items in each genre.
+**Objective:** Count the number of content items in each genre. UNNEST is used since few movies/TV shows have multiple genres.
 
 ### 10.Find each year and the average numbers of content release in India on netflix. Return top 5 year with highest avg content release!
 
